@@ -13,7 +13,7 @@ class BasicCommandResolver implements CommandResolver
      * @return string the command handler class
      * @throws CommandHandlerNotFoundException
      */
-    public function toCommandHandler(Command $command)
+    public function toCommandHandler($command)
     {
         $handlerName = preg_replace('/Command$/', 'CommandHandler', get_class($command));
 
@@ -26,7 +26,7 @@ class BasicCommandResolver implements CommandResolver
     }
 
 
-    public function toCommandValidator(Command $command)
+    public function toCommandValidator($command)
     {
         return preg_replace('/Command$/', 'Validator', get_class($command));
     }

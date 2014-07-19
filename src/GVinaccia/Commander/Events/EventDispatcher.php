@@ -2,7 +2,6 @@
 
 namespace GVinaccia\Commander\Events;
 
-
 use Illuminate\Events\Dispatcher;
 use Illuminate\Log\Writer;
 

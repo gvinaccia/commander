@@ -13,11 +13,11 @@ interface CommandResolver
      * @return string the command handler class
      * @throws CommandHandlerNotFoundException
      */
-    public function toCommandHandler(Command $command);
+    public function toCommandHandler($command);
 
     /**
      * @param Command $command
      * @return mixed
      */
-    public function toCommandValidator(Command $command);
+    public function toCommandValidator($command);
 }

@@ -4,6 +4,10 @@ namespace GVinaccia\Commander;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class CommanderServiceProvider
+ * @package GVinaccia\Commander
+ */
 class CommanderServiceProvider extends ServiceProvider
 {
 	/**
@@ -12,6 +16,14 @@ class CommanderServiceProvider extends ServiceProvider
 	 * @var bool
 	 */
 	protected $defer = false;
+
+    /**
+     *
+     */
+    public function boot()
+    {
+        $this->package('gvinaccia/commander');
+    }
 
 	/**
 	 * Register the service provider.

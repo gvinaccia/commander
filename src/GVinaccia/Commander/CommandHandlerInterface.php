@@ -13,5 +13,5 @@ interface CommandHandlerInterface
      * @param Command $command
      * @return mixed
      */
-    public function handle(Command $command);
+    public function handle($command);
 } 

@@ -47,7 +47,7 @@ class BaseCommandBus implements CommandBus
      * @return CommandHandlerInterface
      * @throws CommandHandlerNotFoundException
      */
-    public function getHandler(Command $command)
+    public function getHandler($command)
     {
         $handler = $this->app->make($this->commandResolver->toCommandHandler($command));
 
