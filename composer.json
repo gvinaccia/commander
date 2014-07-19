@@ -1,6 +1,7 @@
 {
     "name": "gvinaccia/commander",
     "description": "",
+    "type": "library",
     "authors": [
         {
             "name": "Giovanni Vinaccia",
